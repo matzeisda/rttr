@@ -1,0 +1,27 @@
+# Lokale/produktive Konfiguration
+/config/database.php
+/config/*.local.php
+
+# Laufzeitdaten und personenbezogene Importquellen
+/storage/logs/*
+/storage/backups/*
+/storage/temp/*
+/storage/uploads/*
+/storage/imports/*
+/storage/documents/*
+/storage/import_sources/*
+/storage/setup.lock
+
+# Öffentliche Wartungsdateien nur temporär auf Server legen
+/public/setup.php
+/public/migration.php
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Platzhalter erlauben
+!/storage/**/.gitkeep
+!/storage/**/.htaccess
